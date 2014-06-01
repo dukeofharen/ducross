@@ -5,10 +5,14 @@
 <link rel="stylesheet" href="../ducross/ducross.css" />
 <script type="text/javascript">
 $(document).ready(function(){
-	ducross = new Ducross();
-	ducross.puzzleLocation = "../puzzles/";
-	ducross.loadPuzzle("easy1");
-	ducross.drawPuzzle();
+	$('select[name="puzzle"]').change(function(){
+		$('#picross_wrapper').show();
+		$('#puzzle').html("");
+		ducross = new Ducross();
+		ducross.puzzleLocation = "../puzzles/";
+		ducross.loadPuzzle($(this).val());
+		ducross.drawPuzzle();
+	});
 	$('#check').click(function(){
 		if(ducross.checkResult()){
 			alert("Correct");
@@ -22,14 +26,17 @@ $(document).ready(function(){
 </script>
 </head>
 <body>
-	<span id="picross_wrapper">
-		<div id="puzzle"></div>
-		<br style="clear:both;" />
-		<p>
-			<a href="#" class="button" id="mode">Mode (draw)</a>
-			<a href="#" class="button" id="check">Check</a>
-		</p>
-	</span>
+	<select name="puzzle"><option></option><option>easy1</option><option>easy2</option><option>easy3</option><option>easy4</option><option>easy5</option><option>easy6</option><option>easy7</option><option>easy8</option><option>easy9</option><option>easy10</option><option>easy11</option><option>easy12</option><option>easy13</option><option>easy14</option><option>easy15</option><option>easy16</option><option>easy17</option><option>easy18</option><option>easy19</option><option>easy20</option><option>medium1</option><option>medium2</option><option>medium3</option><option>medium4</option><option>medium5</option><option>medium6</option><option>medium7</option><option>medium8</option><option>medium9</option><option>medium10</option><option>hard1</option><option>hard2</option><option>hard3</option><option>hard4</option><option>hard5</option><option>hard6</option><option>hard7</option><option>hard8</option><option>hard9</option><option>hard10</option></select>
+	<div>
+		<span id="picross_wrapper" style="display:none;">
+			<div id="puzzle"></div>
+			<br style="clear:both;" />
+			<p>
+				<a href="#" class="button" id="mode">Mode (draw)</a>
+				<a href="#" class="button" id="check">Check</a>
+			</p>
+		</span>
+	</div>
 	
 </body>
 </html>
