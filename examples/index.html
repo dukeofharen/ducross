@@ -1,0 +1,35 @@
+<html>
+<head>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../ducross/ducross.js"></script>
+<link rel="stylesheet" href="../ducross/ducross.css" />
+<script type="text/javascript">
+$(document).ready(function(){
+	ducross = new Ducross();
+	ducross.puzzleLocation = "../puzzles/";
+	ducross.loadPuzzle("easy1");
+	ducross.drawPuzzle();
+	$('#check').click(function(){
+		if(ducross.checkResult()){
+			alert("Correct");
+		}
+		else{
+			alert("Incorrect");
+		}
+		return false;
+	});
+});
+</script>
+</head>
+<body>
+	<span id="picross_wrapper">
+		<div id="puzzle"></div>
+		<br style="clear:both;" />
+		<p>
+			<a href="#" class="button" id="mode">Mode (draw)</a>
+			<a href="#" class="button" id="check">Check</a>
+		</p>
+	</span>
+	
+</body>
+</html>

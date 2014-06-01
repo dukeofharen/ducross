@@ -1,0 +1,66 @@
+#picross_wrapper{
+	display:inline-block;
+	font-family: Tahoma, Geneva, sans-serif;
+	clear:both;
+}
+
+#picross_wrapper #puzzle{
+	position:relative;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#picross_wrapper #puzzle .grid{
+	position:absolute;
+	right:0;
+	bottom:0;
+}
+
+#picross_wrapper #puzzle .box{
+	margin:1px;
+	background-color:#CCFFFF;
+	float:left;
+}
+#picross_wrapper #puzzle .box.active{
+	background-color:#00004C;
+}
+#picross_wrapper #puzzle .box.excluded{
+	background-color:#FFFFFF;
+}
+
+#picross_wrapper #puzzle .horizontal-numbers{
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+#picross_wrapper #puzzle .horizontal-numbers .row{
+	border-top:1px solid #F0F0F5;
+	width:130px;
+	box-sizing:initial !important;
+}
+
+#picross_wrapper #puzzle .vertical-numbers{
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+#picross_wrapper #puzzle .vertical-numbers .row{
+	border-left:1px solid #F0F0F5;
+	height:130px;
+	float:right;
+	box-sizing:initial !important;
+}
+
+#picross_wrapper .button{
+	padding:10px;
+	text-decoration:none !important;
+	color:#FFF !important;
+	font-weight:bold;
+	background-color:#00004C;
+}

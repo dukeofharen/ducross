@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../ducross/ducross.js"></script>
+<link rel="stylesheet" href="../ducross/ducross.css" />
+<script type="text/javascript">
+$(document).ready(function(){
+	ducross = new Ducross();
+	ducross.playMode = 1;
+	$("#dim_form").submit(function(){
+		ducross.totalWidth = $('input[name="width"]').val();
+		ducross.totalHeight = $('input[name="height"]').val();
+		ducross.drawPuzzle();
+		return false;
+	});
+});
+</script>
+</head>
+<body>
+	<form method="post" action="" id="dim_form">
+		Width: <input type="text" name="width" /><br />
+		Height: <input type="text" name="height" /><br />
+		<input type="submit" value="Generate grid" />
+	</form>
+	<div id="picross_wrapper">
+		<div id="puzzle"></div>
+		<br style="clear:both;" />
+		<a href="#" class="button" id="generate">Generate</a>
+	</div><br style="clear:both;" />
+	Result:<br />
+	<textarea id="result" rows="10" cols="30"></textarea>
+</body>
+</html>
