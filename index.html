@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Ducross - online nonogram / picross puzzles</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<script src="js/vendor/jquery-1.11.1.min.js"></script>
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+		
+		<script type="text/javascript" src="js/ducross/ducross.js"></script>
+		<link rel="stylesheet" href="js/ducross/ducross.css" />
+		
+		<script src="js/main.js"></script>
+		
+		<script type="text/javascript" src="js/vendor/tostie/jquery.tostie.js"></script>
+		<link rel="stylesheet" href="js/vendor/tostie/jquery.tostie.css" type="text/css" />
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-49608962-3', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">Ducross - nonogram puzzles</h1>
+                <nav>
+                    <ul>
+                        
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+				<a href="http://www.thonky.com/picross/" target="_blank">A good explanation of Nonogram / Picross</a>
+                <div id="puzzle-selector" class="tab">
+					
+				</div>
+				
+				<div id="puzzle-field" style="display:none;" class="tab">
+					<a href="#" id="back-to-menu">Back to menu</a>
+					<div>
+						<span id="picross_wrapper" style="display:none;">
+							<div id="puzzle"></div>
+							<br style="clear:both;" />
+							<p>
+								<a href="#" class="button" id="mode">Mode (draw)</a>
+							</p>
+						</span>
+					</div>
+				</div>
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h3>&copy; 2015 - a project by <a href="http://duco.cc/">Duco Winterwerp</a></h3>
+				<a href="https://github.com/dukeofharen/ducross">Fork on GitHub</a>
+            </footer>
+        </div>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>

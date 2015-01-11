@@ -1,0 +1,57 @@
+[
+	{
+		"name":"Easy",
+		"puzzles":[
+			["easy1", "L"],
+			["easy2", "E"],
+			["easy3", "T"],
+			["easy4", "S"],
+			["easy5", "W"],
+			["easy6", "O"],
+			["easy7", "K"],
+			["easy8", "Musical note"],
+			["easy9", "Diamond"],
+			["easy10", "Spade"],
+			["easy11", "Heart"],
+			["easy12", "Club"],
+			["easy13", "Question mark"],
+			["easy14", "Dollar sign"],
+			["easy15", "Arrow"],
+			["easy16", "Moon"],
+			["easy17", "Apple"],
+			["easy18", "Knife and fork"],
+			["easy19", "Teapot"],
+			["easy20", "Duck"],
+			["easy21", "Camel"],
+			["easy22", "R"],
+			["easy23", "Car"],
+			["easy24", "Helicopter"],
+			["easy25", "Popsicle"],
+			["easy26", "Star"],
+			["easy27", "Panda"],
+			["easy28", "Candle"],
+			["easy29", "House"],
+			["easy30", "Scissors"]
+		]
+	},
+	{
+		"name":"Medium",
+		"puzzles":[
+			["medium1", "Bird"],
+			["medium2", "Cocktail"],
+			["medium3", "Utensils and pan"],
+			["medium4", "Mickey Mouse"]
+		]
+	},
+	{
+		"name":"Hard",
+		"puzzles":[
+			["hard1", "Musical notes"],
+			["hard2", "Man feeding his dog"],
+			["hard3", "My little pony"],
+			["hard4", "Dragonfly"],
+			["hard5", "Grape branch"],
+			["hard6", "Sword and shield"]
+		]
+	}
+]
